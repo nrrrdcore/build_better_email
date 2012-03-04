@@ -1,0 +1,81 @@
+<%= stylesheet_link_tag '/stylesheets/mailers/invite.css' %>
+<table border="0" cellpadding="0" cellspacing="0" width="600" class="container">
+  <tr>
+    <td>
+      
+      <!-- Top Nav-->
+      <table border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr class="email-header">
+          <td>
+            <%= image_tag "/images/nav.gif", :width => "600", :height => "60", :alt => "Logo" %>
+          </td>
+        </tr>
+      </table>  
+
+      <!-- Header -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="header t2">
+        <tr>
+          <td>
+            <h1>Julie invited you to try something cool.</h1>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Body -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="body">
+        <tr>
+
+          <!-- Left -->
+          <td width="80%">
+            <table border="0" cellpadding="0" cellspacing="0" class="left">
+
+              <!-- Description -->
+              <tr>
+                <td>
+                  <p class="body-desc"></p>
+                </td>
+              </tr>
+
+              <!-- Sign Up Button -->
+              <tr>
+                <td class="t3">
+                  <%= link_to image_tag("/images/check_it_out.gif", :width => "220", :height => "63", :alt => "Click Here", :border => "0" ), sign_up_url %>
+                </td>
+              </tr>
+              
+              <!-- Text Only Link -->
+              <tr>
+                <td class="t1">
+                  <%= link_to "Take it for a spin.", sign_up_url, :class => "text-only" %>
+                </td>
+              </tr>
+
+            </table>
+          </td>
+
+          <!-- Right -->
+          <td width="20%">
+            <table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                  <%= image_tag "/images/fun_image.gif", :width => "180", :height => "178", :alt => "Are we having fun yet?", :border => "0" %>
+                </td>
+              </tr>
+            </table>
+          </td>
+
+        </tr>
+      </table>
+
+      <!-- Footer -->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" class="footer">
+        <tr>
+          <td>
+            Startup HQ, San Francisco, CA.
+            <%= link_to "unsubscribe", unsubscribe_url, :class => "text-only" %>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
